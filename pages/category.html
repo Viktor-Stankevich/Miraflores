@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+  
+  <!-- Header Start -->
+  <header class="site-header">
+    
+    <div class="site-header__content">
+
+      <div id="logo">
+        <h1><a href="/">Miraflores</a></h1>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div id="cart">
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+      <span class="material-symbols-outlined">
+        shopping_bag
+      </span>
+      <p># Товаров (100.00Р)</p>
+    </a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Корзина</h4>
+        <table class="cart">
+
+          <thead>
+            <tr>
+                <th>Изоброжение</th>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Убрать</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="../assets/img/1.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="../assets/img/4.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="../assets/img/3.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+      <div class="modal-footer">
+        <a href="./checkout.html" class="modal-close waves-effect waves-green btn-flat">Оформление заказа</a>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- Main Start -->
+  <main class="site-main">
+    
+    <div class="site-main__content">
+
+      <section class="category">
+        <h2>Категории</h2>
+
+        <nav class="category-list">
+          <ul>
+            <li>
+              <a href='#' data-target='dropdown1'class="category-link dropdown-trigger btn">
+                Букеты
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </a>
+              <!-- Dropdown Structure -->
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Весение</a></li>
+                <li><a href="#!">Из роз</a></li>
+                <li><a href="#!">Подарочные</a></li>
+                <li><a href="#!">С герберой</a></li>
+                <li><a href="#!">С хризантемой</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="./category.html">Смотреть все букеты</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="category-link">Цветы</a></li>
+            <li><a href="#" class="category-link">Оформление цветами</a></li>
+            <li><a href="#" class="category-link">Корзинки цветов</a></li>
+          </ul>
+        </nav>
+
+      </section>
+
+      <section class="featured">
+        <h2>Рекомендуем</h2>
+        <div class="products-list">
+
+          <article>
+            
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/1.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price">100P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+
+          </article>
+
+          <article>
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/2.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price-old">100P</span>
+                <span class="price-new">90P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+          </article>
+
+          <article>
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/3.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price-old">100P</span>
+                <span class="price-new">90P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+          </article>
+
+          <article>
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/4.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price">90P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+          </article>
+
+          <article>
+            
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/1.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price">100P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+
+          </article>
+
+          <article>
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/2.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price-old">100P</span>
+                <span class="price-new">90P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+          </article>
+
+          <article>
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/3.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price-old">100P</span>
+                <span class="price-new">90P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+          </article>
+
+          <article>
+            <div class="image">
+              <a href="./product.html">
+                <img src="../assets/img/4.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="caption">
+              <h3>Название товара</h3>
+              <div class="price">
+                <span class="price">90P</span>
+              </div>
+              <button type="button">
+                <i class="material-symbols-outlined">
+                  shopping_bag
+                </i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+  <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+
+      <div class="site-footer__content">
+        <section>
+          <h2>Miraflores</h2>
+          <nav class="information-list">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Оптовикам</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+  
+    </footer>
+    <!-- Footer End -->
+
+  <!-- Materialize -->
+  <script src="../assets/js/materialize/bin/materialize.min.js"></script>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Html -> html */
+
+html {
+  font-size: 14px;
+  @include breakpoint( sm ) {
+    font-size: 16px;
+  }
+  @include breakpoint( md ) {
+    font-size: 18px;
+  }
+}
+
+/* Body -> body */
+body {
+  font-family: var(--global--font-family-primary);
+}
+
+/* Headings -> h1, h2, h3, h4, h5, h6 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--global--font-family-secondary);
+  font-weight: var(--global--font-weight-bold);
+  letter-spacing: var(--global--letter-spacing-minus3);
+  color: var(--global--color-blue);
+}
+
+/* Links -> a */
+a {
+  font-weight: var(--global--font-weight-bold);
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+}
+
+/* Logo -> #logo */
+#logo {
+
+  & > h1,
+  & > h2 {
+    
+    & > a {
+      font-family: var(--global--font-family-primary) !important;
+      color: var(--global--color-alphaOrange50) !important;
+    }
+
+  }
+
+}
+
+/* Price -> span.price */
+span.price,
+span.price-new {
+  font-size: 1.5rem;
+}
+
+/* Price -> span.price-old */
+span.price-old {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  opacity: .2;
+}
+
+/* Paragraph -> p */
+p {
+  line-height: 30px
+}

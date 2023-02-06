@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+
+  <!-- Header Start -->
+  <header class="site-header">
+  
+    <div class="site-header__content">
+
+      <div id="logo">
+        <h1><a href="/">Miraflores</a></h1>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div id="cart">
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+      <span class="material-symbols-outlined">
+        shopping_bag
+      </span>
+      <p># Товаров (100.00Р)</p>
+    </a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Корзина</h4>
+        <table class="cart">
+
+          <thead>
+            <tr>
+                <th>Изоброжение</th>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Убрать</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="./assets/img/1.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="./assets/img/4.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="./assets/img/3.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+      <div class="modal-footer">
+        <a href="./checkout.html" class="modal-close waves-effect waves-green btn-flat">Оформление заказа</a>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- Main Start -->
+  <main class="site-main">
+
+    <div class="site-main__content">
+      <section>
+        <h2>Оформление заказа</h2>
+      </section>
+
+      <section class="cart">
+        <table class="cart">
+
+          <thead>
+            <tr>
+                <th>Изоброжение</th>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Убрать</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="../assets/img/1.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="../assets/img/4.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="./product.html">
+                  <img src="../assets/img/3.jpg" alt="">
+                </a>
+              </td>
+              <td>
+                <a href="./product.html">
+                  Название товара
+                </a>
+              </td>
+              <td>$0.87</td>
+              <td>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    delete_forever
+                  </span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+
+
+      </section>
+
+      <section class="person-info">
+        <h2>Личные данные</h2>
+        
+        <div class="container">
+          <div class="row">
+            <form class="col s12">
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Имя</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Фамилия</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="telephone" type="tel" class="validate">
+                  <label for="telephone">Телефон</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="city" type="text" class="validate">
+                  <label for="city">Город</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="address" type="text" class="validate">
+                  <label for="address">Адресс</label>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="payment">
+        <h2>Оплата</h2>
+        <ul>
+          <li>
+            <p>
+              <label>
+                <input name="group1" type="radio" />
+                <span>Метод оплаты№1</span>
+              </label>
+            </p>
+          </li>
+          <li>
+            <p>
+              <label>
+                <input name="group1" type="radio" />
+                <span>Метод оплаты№2</span>
+              </label>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="total">
+        <h2>Итого</h2>
+
+        <button class="mf-btn" type="button">Оформить</button>
+      </section>
+
+    </div>
+
+  </main>
+  <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+
+      <div class="site-footer__content">
+        <section>
+          <h2>Miraflores</h2>
+          <nav class="information-list">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Оптовикам</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+  
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Materialize -->
+    <script src="../assets/js/materialize/bin/materialize.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Global variables */
+
+:root {
+
+  /* Font family */
+  --global--font-family-primary: 'Montserrat Alternates', sans-serif;
+  --global--font-family-secondary: 'Comfortaa', cursive;
+
+  /* Font size */
+  --global--font-size-base: 1rem;
+
+  /* Font weith */
+  --global--font-weight-regular: 400;
+  --global--font-weight-semiBold: 600;
+  --global--font-weight-bold: 700;
+
+  /* Letter spacing */
+  --global--letter-spacing-minus3: -0.05em;
+
+  /* Colors */
+  --global--color-black: #222;
+  --global--color-white: #fff;
+  --global--color-orange: #FD794B;
+  --global--color-blue: #8EA3E6;
+  
+  /* Colors Alpha */
+  --global--color-alphaOrange50: rgba(253, 121, 75, 0.5);
+  
+
+  /* Links */
+  --links--color-base: var(--global--color-black);
+  --links--color-white: var(--global--color-white);
+  --links--color-orange: var(--global--color-orange);
+  --links--color-blue: var(--global--color-blue);
+  --links--color-hover: var(--global--color-orange);
+
+}

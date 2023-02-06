@@ -1,0 +1,30 @@
+/* Links -> a */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--links--color-base) !important;
+  transition: color 0.1s linear;
+  outline: none;
+}
+
+/* Links hover -> a:hover */
+a:hover {
+  color: var(--links--color-hover) !important;
+}
+
+/* Filters link -> a.filter-link */
+a.filter-link {
+  padding: 10px 20px;
+  border: 1px solid var(--links--color-blue);
+  border-radius: 25px;
+  color: var(--links--color-blue) !important;
+  transition: color 0.2s linear;
+}
+
+/* Filters link hover -> a.filter-link:hover */
+a.filter-link:hover {
+  // background-color: var(--global--color-blue);
+  border: 1px solid var(--links--color-orange);
+  border-radius: 25px;
+  color: var(--links--color-orange) !important;
+}

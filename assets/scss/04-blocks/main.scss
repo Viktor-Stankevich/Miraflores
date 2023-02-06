@@ -1,0 +1,23 @@
+/**
+  * sm = 480px
+  * md = 768px
+  * lg = 980px
+  */
+
+/* Main -> main */
+main {
+  flex: 1 0 auto;
+  margin-top: 30px;
+
+  @include breakpoint( sm ) {
+    margin-top: 40px;
+  }
+
+  @include breakpoint( md ) {
+    margin-top: 60px;
+  }
+
+  @include breakpoint( lg ) {
+    margin-top: 80px;
+  }
+}

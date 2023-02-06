@@ -1,0 +1,26 @@
+/* Button -> button */
+button {
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+button:hover {
+  color: var(--links--color-orange);
+}
+
+button.mf-btn {
+  padding: 10px 30px;
+  border: 1px solid var(--global--color-orange);
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: var(--global--font-weight-bold);
+  color: var(--global--color-orange);
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: var(--global--color-blue);
+    border: 1px solid var(--global--color-blue);
+    color: var(--global--color-white)
+  }
+
+}

@@ -1,0 +1,30 @@
+/* Category list -> nav.category-list */
+nav.category-list,
+nav.information-list,
+nav.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 12px;
+
+    & > li {
+
+      & > a {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+      }
+
+    }
+
+  }
+
+}

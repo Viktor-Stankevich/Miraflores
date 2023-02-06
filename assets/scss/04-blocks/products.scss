@@ -1,0 +1,65 @@
+/* Products list -> .products-list */
+.products-list {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+
+  @include breakpoint( sm ) {
+    gap: 12px;
+  }
+
+  @include breakpoint( md ) {
+    grid-template: auto / repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  @include breakpoint( lg ) {
+    grid-template: auto / repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  & > article {
+    width: 100%;
+    height: 100%;
+
+    & > .image {
+
+      & img {
+        max-height: 144px;
+        @include breakpoint( sm ) {
+          max-height: 210px;
+        }
+        @include breakpoint( md ) {
+          max-height: 240px;
+        }
+        @include breakpoint( lg ) {
+          max-height: 270px;
+        }
+      }
+
+    }
+
+    & > .caption {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-template-areas: 'title title' 'price btn';
+      align-items: center;
+
+      & > h3 {
+        grid-area: title;
+      }
+
+      & > .price {
+        grid-area: price;
+      }
+
+      & > button {
+        grid-area: btn;
+      }
+
+    }
+
+  }
+
+}
