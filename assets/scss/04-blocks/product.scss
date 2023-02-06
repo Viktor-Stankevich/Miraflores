@@ -1,11 +1,9 @@
 /* Single product -> .single-product */
 .single-product {
-  display: grid;
-  grid-template: 80px 0.5fr 0.5fr 0.5fr / 1fr;
-  grid-template-areas: 'title' 'img' 'desc' 'options';
-  gap: 18px;
+
 
   @include breakpoint( lg ) {
+    display: grid;
     grid-template: 80px 0.5fr 0.5fr / repeat(2, 1fr);
     grid-template-areas: 'img title' 'img desc' 'img options' 'img buy';
     gap: 20px;
